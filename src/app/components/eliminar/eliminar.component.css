@@ -4,18 +4,14 @@ h2 {
   margin-top: 20px;
 }
 
-form {
-  max-width: 600px;
+div {
   margin: 20px auto;
+  max-width: 600px;
   padding: 1em;
   border: 1px solid #ccc;
   border-radius: 1em;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-div {
-  margin-bottom: 1em;
 }
 
 label {
@@ -24,18 +20,12 @@ label {
   display: block;
 }
 
-input {
-  border: 1px solid #ccc;
+select {
+  width: 100%;
   padding: .5em;
   font-size: 1em;
-  width: 100%;
-  box-sizing: border-box;
+  border: 1px solid #ccc;
   border-radius: .25em;
-}
-
-input:focus {
-  border-color: #4CAF50;
-  outline: none;
 }
 
 button {
@@ -48,6 +38,7 @@ button {
   font-size: 1em;
   display: block;
   width: 100%;
+  margin-top: 20px;
 }
 
 button:hover {
