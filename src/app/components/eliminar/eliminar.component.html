@@ -1,7 +1,7 @@
 <h2>Eliminar Contrato</h2>
 <div>
   <label for="contrato">Seleccione un contrato:</label>
-  <select id="contrato" (change)="onSelect($event.target.value)">
+  <select id="contrato" (change)="onSelect(1)">
     <option *ngFor="let contrato of contratos" [value]="contrato.id">{{ contrato.identificador }}</option>
   </select>
 </div>

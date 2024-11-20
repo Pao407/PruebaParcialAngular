@@ -1,0 +1,27 @@
+<h2>Consultar Todos los Contratos</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Identificador</th>
+      <th>Valor</th>
+      <th>Nombre del Contratante</th>
+      <th>Documento del Contratante</th>
+      <th>Nombre del Contratantista</th>
+      <th>Documento del Contratantista</th>
+      <th>Fecha Inicial</th>
+      <th>Fecha Final</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let contrato of contratos">
+      <td>{{ contrato.identificador }}</td>
+      <td>{{ contrato.valor }}</td>
+      <td>{{ contrato.nombre_contratante }}</td>
+      <td>{{ contrato.documento_contratante }}</td>
+      <td>{{ contrato.nombre_contratantista }}</td>
+      <td>{{ contrato.documento_contratantista }}</td>
+      <td>{{ contrato.fecha_inicial }}</td>
+      <td>{{ contrato.fecha_final }}</td>
+    </tr>
+  </tbody>
+</table>
