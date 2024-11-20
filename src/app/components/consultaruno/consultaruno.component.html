@@ -1,1 +1,19 @@
-<p>consultaruno works!</p>
+<h2>Consultar Un Contrato</h2>
+<div>
+  <label for="contrato">Seleccione un contrato:</label>
+  <select id="contrato" (change)="onSelect(1)">
+    <option *ngFor="let contrato of contratos" [value]="contrato.id">{{ contrato.identificador }}</option>
+  </select>
+</div>
+
+<div *ngIf="selectedContrato">
+  <h3>Detalles del Contrato</h3>
+  <p><strong>Identificador:</strong> {{ selectedContrato.identificador }}</p>
+  <p><strong>Valor:</strong> {{ selectedContrato.valor }}</p>
+  <p><strong>Nombre del Contratante:</strong> {{ selectedContrato.nombre_contratante }}</p>
+  <p><strong>Documento del Contratante:</strong> {{ selectedContrato.documento_contratante }}</p>
+  <p><strong>Nombre del Contratantista:</strong> {{ selectedContrato.nombre_contratantista }}</p>
+  <p><strong>Documento del Contratantista:</strong> {{ selectedContrato.documento_contratantista }}</p>
+  <p><strong>Fecha Inicial:</strong> {{ selectedContrato.fecha_inicial }}</p>
+  <p><strong>Fecha Final:</strong> {{ selectedContrato.fecha_final }}</p>
+</div>
